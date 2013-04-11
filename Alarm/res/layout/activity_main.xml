@@ -2,19 +2,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" >
+    android:orientation="vertical" >
         
-		<EditText
-			android:id="@+id/timeDisplay"
-			android:layout_width="70dp"
-			android:layout_height="wrap_content"
-			android:maxLength="5"
-			android:inputType="time" />
+	<TimePicker
+		android:id="@+id/timePicker"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
 
-		<Button
-			android:id="@+id/setAlarm"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="@string/set_alarm" />
+	<Button
+		android:id="@+id/setAlarm"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="newAlarm"
+		android:text="@string/set_alarm" />
     
 </LinearLayout>
